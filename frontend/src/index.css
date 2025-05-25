@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pet-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.pet-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Pet Form Styles */
+.pet-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.vaccinations-section {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.vaccination-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.vaccination-list {
+  list-style: none;
+  padding: 0;
+}
+
+.vaccination-list li {
+  padding: 8px;
+  background: #f0f0f0;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.danger {
+  background: #f44336;
+}
